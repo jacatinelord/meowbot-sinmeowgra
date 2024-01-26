@@ -1,5 +1,5 @@
-MeowBot.InitLocale()
-local i18n = MeowBot.I18n
+NetherBot.InitLocale()
+local i18n = NetherBot.I18n
 
 -- Create the Main frame
 local frame = CreateFrame("Frame", "MeowBotFrame", UIParent)
@@ -578,9 +578,9 @@ lookupFrame:SetScript("OnMouseUp", function(self, button)
 end)
 
 -- Slash command to show-hide netherbot.
-SLASH_MEOWBOT1 = "/mwbot"
-SLASH_MEOWBOT2 = "/mwb"
-function SlashCmdList.MEOWBOT(msg, editbox)
+SLASH_NETHERBOT1 = "/mwbot"
+SLASH_NETHERBOT2 = "/mwb"
+function SlashCmdList.NETHERBOT(msg, editbox)
     if msg == "show" or msg == "s" then
         frame:Show()
     elseif msg == "hide" or msg == "h" then
