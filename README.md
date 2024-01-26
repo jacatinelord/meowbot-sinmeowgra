@@ -32,5 +32,7 @@ What is MeowBot? a modified Netherbot addon for [Sinmeowgra WOTLK ID PS](https:/
 3. Use the buttons to quickly execute NPCBot commands by selecting a target or self for all of your bots or enter bot ID.
 
 ## Slash Commands
-/netherbot show
-/netherbot hide
+/mwb s
+/mwb h
+/mwbot s
+/mwbot h
