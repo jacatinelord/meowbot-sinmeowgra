@@ -1,5 +1,5 @@
 ## Interface: 30300
-## Title: [Sinmeowgra] MeowBot
+## Title: [Sinmeowgra] - MeowBot
 ## Notes: MeowBot - NPC Bot Tool For Sinmeowgra WOTLK ID
 ## Author: Jakatangkir
 ## Version: 1.5
