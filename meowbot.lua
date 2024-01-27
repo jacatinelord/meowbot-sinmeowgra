@@ -760,7 +760,6 @@ end
 
 -- Event handler for raid composition changes
 local function updateRaidComposition(self, event, ...)
-  TeamFrame:Show()
     initializeFramesAndBars()
 end
 
@@ -768,7 +767,6 @@ end
 local function OnEvent(self, event, ...)
     if event == "PLAYER_ENTERING_WORLD" or event == "RAID_ROSTER_UPDATE" or event == "ADDON_LOADED" then
         initializeFramesAndBars()
-        TeamFrame:Show()
     else
         updateHealthAndMana(self, event, ...)
     end
@@ -809,12 +807,8 @@ TeamFrame:RegisterEvent("UNIT_AURA")
 TeamFrame:RegisterEvent("PARTY_MEMBERS_CHANGED")
 TeamFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
 TeamFrame:SetScript("OnEvent", function(self, event, ...)
-  if event == "RAID_ROSTER_UPDATE" then
-    TeamFrame:Show()
-  end
     if event == "PLAYER_ENTERING_WORLD" or event == "RAID_ROSTER_UPDATE" then
         initializeFramesAndBars()
-        TeamFrame:Show()
     else
         updateHealthAndMana(self, event, ...)
     end
